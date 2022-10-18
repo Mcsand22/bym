@@ -22,18 +22,10 @@ html {
 
 /* body */
 
-ul {
-  text-decoration: none;
-}
-
 a {
   text-decoration: none;
   list-style: none;
   color: black;
-}
-
-a:hover {
-  color: #d977c8;
 }
 
 header {
@@ -49,23 +41,6 @@ header {
 img,
 svg {
   vertical-align: middle;
-}
-
-.navbar__li {
-  display: inline-block;
-  justify-content: space-between;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.logo {
-  margin: 15rem;
-}
-
-.logo__bym {
-  max-width: fit-content;
-  font-size: 30rem;
-  font-weight: 600;
 }
 
 .logo span {
@@ -90,14 +65,14 @@ svg {
   }
 }
 
-body {
-  font-size: 1.5rem;
+main {
+  font-size: 1.2rem;
 }
 
 .about {
   display: flex;
-  padding-top: 15rem;
-  width: 50%;
+  padding-top: 5rem;
+  width: 90%;
   margin: auto;
 }
 
@@ -106,11 +81,12 @@ body {
 }
 
 .about__text img {
-  max-width: 6rem;
   padding-bottom: 1rem;
 }
+
 .about__text {
-  padding: 3rem;
+  padding-left: 3%;
+  padding-right: 3%;
   width: 50rem;
   text-align: center;
   margin: auto;
@@ -121,81 +97,68 @@ body {
 }
 
 .us {
-  display: flex;
-  background-color: #f29bdb;
-  margin-top: 15rem;
+  display: none;
 }
 
-.us__paragraphs {
-  margin: auto;
-}
-
-.us h3 {
-  margin-bottom: 0.5rem;
-}
-
-.us__paragraphs--vision,
-.us__paragraphs--creativity,
-.us__paragraphs--pasion {
-  margin: 2rem;
-}
-
-.location {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding-top: 15rem;
-  max-width: 50%;
+.location iframe {
+  margin-left: 10%;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  width: 80%;
 }
 
 .location__address {
   text-align: center;
   margin: auto;
+  margin-bottom: 3rem;
 }
 
 h2 {
-  padding: 5rem;
-}
-
-.services {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  padding: 2rem;
 }
 
 .uxui,
 .web {
-  display: flex;
-  justify-content: space-between;
-  max-width: 50%;
+  max-width: 80vw;
   margin: auto;
 }
 
+.uxui img {
+  max-width: 80vw;
+}
+
 .uxui__process img {
-  max-width: 30rem;
+  max-width: 100%;
   margin: auto;
   padding: 2rem;
 }
 
+.web img {
+  max-width: 80vw;
+}
+
 .web__languages {
-  display: flex;
-  max-width: 20%;
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
 }
 
 .web__languages img {
-  max-width: 10rem;
+  max-width: 40%;
   padding: 2rem;
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .card img {
   margin: auto;
   padding: 3rem;
-  max-width: 100rem;
+  max-width: 100%;
 }
 
 .card--F2ACD3 {
@@ -262,21 +225,24 @@ h2 {
 }
 
 .link--behance {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   margin-left: 3rem;
 }
 
-.prototype {
+.prototype iframe {
+  margin: 20%;
   text-align: center;
+  max-width: 60%;
 }
 
 .main__title {
   text-align: center;
-  margin-top: 15rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 .contact {
-  max-width: 25%;
+  max-width: 50%;
   margin: auto;
 }
 
@@ -302,17 +268,16 @@ form textarea {
     1;
   box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: block;
   font-weight: bold;
-  padding-left: 5rem;
-  padding-right: 5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
   cursor: pointer;
   transition: all 1s;
-  max-width: 40%;
+  max-width: 80%;
+  margin-bottom: 3rem;
 }
 
 .enviar:hover {
@@ -328,40 +293,49 @@ form textarea {
 .confirm {
   display: none;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 /* footer */
 footer {
   position: sticky;
-  margin-top: 15rem;
+  font-size: 1.5rem;
+  bottom: 0px;
+  background-color: white;
+  margin-top: 5rem;
 }
 
 .footer__top {
   list-style: none;
   text-decoration: none;
   border-top: 2px solid #7eb6d9;
-  bottom: 0px;
-  display: flex;
   justify-content: space-between;
   padding: 5rem;
+  display: flex;
 }
 
-.arq {
-  display: flex;
+.logo__footer {
+  display: none;
+}
+
+.arq__about,
+.arq__serv,
+.arq__port,
+.arq__contact,
+.redes {
+  text-align: center;
 }
 
 .arq__about,
 .arq__serv,
 .arq__port,
 .arq__contact {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-align: center;
+  line-height: 3rem;
 }
 
 .redes {
   font-size: 2rem;
+  margin: 3rem;
 }
 
 .copy {
@@ -371,3 +345,155 @@ footer {
 .fa-heart {
   color: #d9042b;
 }
+
+/* media */
+@media (min-width: 320px) {
+  .navbar__ul {
+    display: none;
+  }
+
+  .logo {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  .logo__bym {
+    font-size: 9rem;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .uxui__process img {
+    max-width: 60%;
+  }
+
+  .about {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  a:hover {
+    color: #d977c8;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  .navbar__ul {
+    display: flex;
+  }
+
+  .navbar__li {
+    display: inline-block;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .logo {
+    margin: 15rem;
+  }
+
+  .logo__bym {
+    font-size: 30rem;
+    font-weight: 600;
+  }
+
+  .about {
+    padding-top: 15rem;
+    max-width: 50%;
+  }
+
+  .location {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 15rem;
+    max-width: 50%;
+  }
+
+  .main__title {
+    margin-top: 15rem;
+    font-size: 2rem;
+  }
+
+  .contact {
+    max-width: 25%;
+  }
+
+  .enviar {
+    max-width: 50%;
+  }
+
+  .uxui,
+  .web {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+  }
+
+  .uxui img {
+    max-width: 50%;
+  }
+
+  .web__languages {
+    display: flex;
+    max-width: 20%;
+  }
+
+  .web__languages img {
+    max-width: 5vw;
+  }
+
+  footer {
+    margin-top: 15rem;
+  }
+
+  .logo__footer {
+    display: flex;
+  }
+
+  .footer__top {
+    display: flex;
+  }
+
+  .arq {
+    display: flex;
+  }
+
+  .arq__about,
+  .arq__serv,
+  .arq__port,
+  .arq__contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .us {
+    display: flex;
+    background-color: #f29bdb;
+    margin-top: 15rem;
+  }
+
+  .us__paragraphs {
+    margin: auto;
+  }
+
+  .us h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .us__paragraphs--vision,
+  .us__paragraphs--creativity,
+  .us__paragraphs--pasion {
+    margin: 2rem;
+  }
+} ;
