@@ -21,6 +21,11 @@ html {
   --bs-navbar-color: black;
 }
 
+.offcanvas-body {
+  background-image: url(../img/Menu/burger-menu-background.jpg);
+  opacity: 95%;
+}
+
 /* body */
 
 a {
@@ -300,9 +305,7 @@ form textarea {
 
 /* footer */
 footer {
-  position: sticky;
   font-size: 1.5rem;
-  bottom: 0px;
   background-color: white;
   margin-top: 3rem;
 }
@@ -403,6 +406,10 @@ footer {
     justify-content: space-between;
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .offcanvas-body {
+    background: white;
   }
 
   .logo__bym {
