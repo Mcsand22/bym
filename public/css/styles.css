@@ -1,5 +1,4 @@
 /* generales */
-
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +15,10 @@ html {
 .navbar {
   list-style: none;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: inline-block;
+  padding: 3rem;
+  --bs-navbar-color: black;
 }
 
 /* body */
@@ -34,7 +35,7 @@ header {
   border-bottom: solid #7eb6d9 2px;
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
+  padding: 5rem !important;
   background-color: white;
 }
 
@@ -381,7 +382,7 @@ footer {
 
 @media (min-width: 1200px) {
   a:hover {
-    color: #d977c8;
+    color: #d977c8 !important;
   }
 
   #burger {
@@ -392,7 +393,18 @@ footer {
     display: flex;
   }
 
+  .nav-item {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .navbar__li {
+    display: inline-block;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+   {
     display: inline-block;
     justify-content: space-between;
     padding-left: 3rem;
@@ -437,10 +449,10 @@ footer {
     margin: 0 auto;
   }
 
-  .uxui img, .web img {
+  .uxui img,
+  .web img {
     max-width: 50%;
   }
-  
 
   .web__languages {
     display: flex;
@@ -482,7 +494,7 @@ footer {
     margin-top: 15rem;
   }
 
-  .team{
+  .team {
     max-width: 50vw;
     display: flex;
     justify-content: flex-end;
